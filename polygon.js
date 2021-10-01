@@ -24,5 +24,9 @@ export class Polygon {
 
             (i == 0) ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
         }
+
+        ctx.fill();
+        ctx.closePath();
+        ctx.restore();
     }
 }
